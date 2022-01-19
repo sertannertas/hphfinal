@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yemek Tarifleri</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        .wrapper{
+            width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h2>Yemek Tarifleri</h2>
+                    </div>
+                    <p>Yemek Veritabanı Projesi</p>
+                    <form action="insert.php" method="post">
+                        <div class="form-group">
+                            <label>Yemek Adı</label>
+                            <input type="text" name="yemek_adi" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Yemek Malzemesi</label>
+                            <textarea name="yemek_malzeme" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Yemek Tarifi</label>
+                            <textarea name="yemek_tarif" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-primary" name="submit" value="Submit">
+                    </form>
+                </div>
+            </div>        
+        </div>
+    </div>
+</body>
+</html>
